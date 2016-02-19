@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Goals</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="root"></div>
+
+<script src="lib/react/JSXTransformer.js"></script>
+<script src="lib/react/react.js"></script>
+
+<script src="lib/moment/moment.min.js"></script>
+<script src="lib/lodash/lodash.min.js"></script>
+
+<script src="vanilla.js"></script>
+<script src="localdata.js"></script>
+<script src="goal-calendar.jsx" type="text/jsx"></script>
+
+<script type="text/jsx">
+React.render(
+	<GoalList url="/goals/api/all" />,
+	document.getElementById('root')
+);
+</script>
+
+</body>
+</html>
